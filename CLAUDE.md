@@ -87,7 +87,7 @@ These principles apply to every line of code. Violations are always wrong.
   - Tests: `pokemon-card.component.test.tsx`
   - Contexts: `pokemon-api.context.tsx`
   - Persistence: `pokemon.persistence.ts`
-- **Folders:** snake_case (e.g., `pokemon_card/`, `shared/`).
+- **Folders:** kebab-case (e.g., `pokemon-card/`, `shared/`).
 - **Variables & functions:** camelCase.
 - **Types & interfaces:** PascalCase.
 - **Enums:** PascalCase for the enum name, PascalCase for members.

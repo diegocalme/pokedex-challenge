@@ -62,7 +62,7 @@ Systematically check every file against every standard category. For each violat
 | Check | Rule | Severity |
 |---|---|---|
 | File names | kebab-case with type suffix: `name.type.ts` | High |
-| Folder names | snake_case | High |
+| Folder names | kebab-case | High |
 | Variables & functions | camelCase | Medium |
 | Types & interfaces | PascalCase | Medium |
 | Enum names and members | PascalCase, string values matching member name | High |

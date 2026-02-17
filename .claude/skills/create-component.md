@@ -149,7 +149,7 @@ After generating the component, prompt the developer to visually verify:
 ## Checklist
 
 - [ ] File name follows `kebab-case.component.tsx` convention.
-- [ ] Folder name follows `snake_case` convention.
+- [ ] Folder name follows `kebab-case` convention.
 - [ ] Dumb component wrapped with `React.memo()`.
 - [ ] Smart component accesses state only through hooks.
 - [ ] All computed values use `useMemo`.

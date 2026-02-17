@@ -1,16 +1,17 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Plus_Jakarta_Sans, Inter } from "next/font/google";
 import { AppProviders } from "@shared/components/app-providers.component";
 import { ErrorBoundary } from "@shared/components/error-boundary.component";
+import { TabBar } from "@shared/components/tab-bar.component";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const plusJakartaSans = Plus_Jakarta_Sans({
+  variable: "--font-plus-jakarta-sans",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
 });
 
@@ -25,12 +26,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="h-full">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${plusJakartaSans.variable} ${inter.variable} h-full antialiased`}
       >
         <ErrorBoundary>
-          <AppProviders>{children}</AppProviders>
+          <AppProviders>
+            <main className="flex-1 overflow-y-auto pb-16">{children}</main>
+            <TabBar />
+          </AppProviders>
         </ErrorBoundary>
       </body>
     </html>
