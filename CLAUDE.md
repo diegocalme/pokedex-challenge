@@ -12,7 +12,7 @@ Read `README.md` at the project root for full business requirements, architectur
 
 **Quick reference:**
 
-- **Stack:** React + TypeScript (strict) + Vite + Zustand + TanStack Query + HeyAPI
+- **Stack:** React + TypeScript (strict) + Zustand + TanStack Query + HeyAPI
 - **API:** PokéAPI REST v2 (`https://pokeapi.co/api/v2/`), typed via OpenAPI spec
 - **Persistence:** Local Storage (not Session Storage)
 - **State hierarchy:** In-memory (source of truth) → API patches → Local Storage hydration
@@ -170,11 +170,10 @@ project-root/
 │   │   ├── types/               # Cross-module types
 │   │   └── utils/               # Utility functions
 │   ├── app.component.tsx        # Root component
-│   └── main.tsx                 # Vite entry point
+│   └── main.tsx                 # entry point
 ├── tests/                       # Test utilities, setup, mocks
 ├── package.json
-├── tsconfig.json
-└── vite.config.ts
+└── tsconfig.json
 ```
 
 ---

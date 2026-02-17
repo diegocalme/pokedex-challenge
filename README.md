@@ -108,7 +108,6 @@ The application reconciles data from three sources with a clear priority order:
 | Concern | Technology | Rationale |
 |---|---|---|
 | Framework | React | Core UI framework |
-| Build Tool | Vite | Fast compilation and HMR |
 | State Management | Zustand | Lightweight, handles persistence complexity |
 | API Querying | TanStack Query | Caching, retries, reactive fetching |
 | API Client | HeyAPI | Type-safe client from OpenAPI spec |
