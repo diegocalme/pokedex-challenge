@@ -41,5 +41,4 @@ yarn-error.log*
 next-env.d.ts
 
 # HeyAPI generated client
-/src/pokemon/api/generated/*
 !/src/pokemon/api/generated/.gitkeep
