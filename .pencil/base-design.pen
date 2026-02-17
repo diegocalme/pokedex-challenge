@@ -1,0 +1,1723 @@
+{
+  "version": "2.8",
+  "children": [
+    {
+      "type": "frame",
+      "id": "D4wGn",
+      "x": -400,
+      "y": 0,
+      "name": "Component/TypeBadge",
+      "reusable": true,
+      "fill": "$type-fire",
+      "cornerRadius": 100,
+      "padding": [
+        4,
+        12
+      ],
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "text",
+          "id": "AgR12",
+          "name": "label",
+          "fill": "#FFFFFF",
+          "content": "Fire",
+          "fontFamily": "Inter",
+          "fontSize": 11,
+          "fontWeight": "600",
+          "letterSpacing": 0.3
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "cSEBJ",
+      "x": -400,
+      "y": 50,
+      "name": "Component/PokemonCard",
+      "reusable": true,
+      "width": 170,
+      "fill": "$bg-card",
+      "cornerRadius": 20,
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "iGAYg",
+          "name": "imageArea",
+          "width": "fill_container",
+          "height": 120,
+          "cornerRadius": [
+            20,
+            20,
+            0,
+            0
+          ],
+          "layout": "vertical",
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "CgweU",
+              "name": "number",
+              "fill": "$text-tertiary",
+              "content": "#001",
+              "fontFamily": "Inter",
+              "fontSize": 11,
+              "fontWeight": "600"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "pqSd6",
+          "name": "info",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 6,
+          "padding": [
+            10,
+            14,
+            12,
+            14
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "CpLDa",
+              "name": "pokeName",
+              "fill": "$text-primary",
+              "content": "Bulbasaur",
+              "fontFamily": "Plus Jakarta Sans",
+              "fontSize": 15,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "h1snT",
+              "name": "types",
+              "gap": 6,
+              "children": [
+                {
+                  "id": "UaAme",
+                  "type": "ref",
+                  "ref": "D4wGn",
+                  "name": "type1",
+                  "fill": "$type-grass",
+                  "descendants": {
+                    "AgR12": {
+                      "content": "Grass"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "3u54J",
+      "x": -400,
+      "y": 350,
+      "name": "Component/TabBar",
+      "reusable": true,
+      "width": 402,
+      "height": 64,
+      "fill": "#FFFFFF",
+      "effect": {
+        "type": "shadow",
+        "shadowType": "outer",
+        "color": "#0000000A",
+        "offset": {
+          "x": 0,
+          "y": -2
+        },
+        "blur": 16
+      },
+      "padding": [
+        8,
+        24,
+        16,
+        24
+      ],
+      "justifyContent": "space_around",
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "frame",
+          "id": "OuqwT",
+          "name": "tabPokedex",
+          "layout": "vertical",
+          "gap": 3,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "icon_font",
+              "id": "6NBwe",
+              "name": "icon",
+              "width": 22,
+              "height": 22,
+              "iconFontName": "book-open",
+              "iconFontFamily": "lucide",
+              "fill": "$accent-red"
+            },
+            {
+              "type": "text",
+              "id": "N3QKb",
+              "name": "label",
+              "fill": "$accent-red",
+              "content": "Pokédex",
+              "fontFamily": "Inter",
+              "fontSize": 10,
+              "fontWeight": "600"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "aWX6b",
+          "name": "tabCollection",
+          "layout": "vertical",
+          "gap": 3,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "icon_font",
+              "id": "A9QWt",
+              "name": "icon",
+              "width": 22,
+              "height": 22,
+              "iconFontName": "backpack",
+              "iconFontFamily": "lucide",
+              "fill": "$text-tertiary"
+            },
+            {
+              "type": "text",
+              "id": "cTiS0",
+              "name": "label",
+              "fill": "$text-tertiary",
+              "content": "Collection",
+              "fontFamily": "Inter",
+              "fontSize": 10,
+              "fontWeight": "500"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "6EInq",
+          "name": "tabProfile",
+          "layout": "vertical",
+          "gap": 3,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "icon_font",
+              "id": "SvldQ",
+              "name": "icon",
+              "width": 22,
+              "height": 22,
+              "iconFontName": "user",
+              "iconFontFamily": "lucide",
+              "fill": "$text-tertiary"
+            },
+            {
+              "type": "text",
+              "id": "cgaZz",
+              "name": "label",
+              "fill": "$text-tertiary",
+              "content": "Trainer",
+              "fontFamily": "Inter",
+              "fontSize": 10,
+              "fontWeight": "500"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "iXvYy",
+      "x": -400,
+      "y": 460,
+      "name": "Component/StatBar",
+      "reusable": true,
+      "width": 320,
+      "height": 20,
+      "gap": 12,
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "text",
+          "id": "fLvQg",
+          "name": "statLabel",
+          "fill": "$text-secondary",
+          "textGrowth": "fixed-width",
+          "width": 40,
+          "content": "HP",
+          "fontFamily": "Inter",
+          "fontSize": 12,
+          "fontWeight": "600"
+        },
+        {
+          "type": "frame",
+          "id": "XJYLd",
+          "name": "track",
+          "width": "fill_container",
+          "height": 8,
+          "fill": "$bg-elevated",
+          "cornerRadius": 100,
+          "children": [
+            {
+              "type": "frame",
+              "id": "P5Q5q",
+              "name": "fill",
+              "width": 140,
+              "height": "fill_container",
+              "fill": "$accent-green",
+              "cornerRadius": 100
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "WfGVa",
+          "name": "value",
+          "fill": "$text-primary",
+          "textGrowth": "fixed-width",
+          "width": 28,
+          "content": "45",
+          "textAlign": "right",
+          "fontFamily": "Inter",
+          "fontSize": 12,
+          "fontWeight": "700"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "oKmpz",
+      "x": 2,
+      "y": 0,
+      "name": "Pokédex - Browse",
+      "clip": true,
+      "width": 402,
+      "height": 874,
+      "fill": "$bg-page",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "C8BSJ",
+          "name": "content",
+          "width": "fill_container",
+          "height": "fill_container",
+          "layout": "vertical",
+          "gap": 20,
+          "padding": [
+            0,
+            20
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "DRx6T",
+              "name": "header",
+              "width": "fill_container",
+              "padding": [
+                56,
+                0,
+                0,
+                0
+              ],
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "sp09q",
+                  "name": "title1",
+                  "fill": "$text-primary",
+                  "content": "Pokédex",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 30,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "frame",
+                  "id": "XMo5m",
+                  "name": "filterBtn",
+                  "width": 40,
+                  "height": 40,
+                  "fill": "$bg-card",
+                  "cornerRadius": 14,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "BvBms",
+                      "name": "filterIc",
+                      "width": 20,
+                      "height": 20,
+                      "iconFontName": "sliders-horizontal",
+                      "iconFontFamily": "lucide",
+                      "fill": "$text-secondary"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "qfgUz",
+              "name": "searchBar",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "$bg-card",
+              "cornerRadius": 16,
+              "gap": 10,
+              "padding": [
+                0,
+                16
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "yq1tS",
+                  "name": "searchIc",
+                  "width": 18,
+                  "height": 18,
+                  "iconFontName": "search",
+                  "iconFontFamily": "lucide",
+                  "fill": "$text-tertiary"
+                },
+                {
+                  "type": "text",
+                  "id": "7cFiI",
+                  "name": "searchTxt",
+                  "fill": "$text-tertiary",
+                  "content": "Search Pokémon...",
+                  "fontFamily": "Inter",
+                  "fontSize": 14
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "bwrWN",
+              "name": "pokemonGrid",
+              "width": "fill_container",
+              "height": "fill_container",
+              "layout": "vertical",
+              "gap": 14,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "mjYLg",
+                  "name": "row1",
+                  "width": "fill_container",
+                  "gap": 14,
+                  "children": [
+                    {
+                      "id": "2Rlvy",
+                      "type": "ref",
+                      "ref": "cSEBJ",
+                      "width": "fill_container",
+                      "name": "c1",
+                      "descendants": {
+                        "iGAYg": {
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "./images/generated-1771362917718.png",
+                            "mode": "fill"
+                          }
+                        },
+                        "CgweU": {
+                          "content": "#001"
+                        },
+                        "CpLDa": {
+                          "content": "Bulbasaur"
+                        },
+                        "UaAme": {
+                          "fill": "$type-grass"
+                        },
+                        "UaAme/AgR12": {
+                          "content": "Grass"
+                        }
+                      }
+                    },
+                    {
+                      "id": "Rc7Md",
+                      "type": "ref",
+                      "ref": "cSEBJ",
+                      "width": "fill_container",
+                      "name": "c2",
+                      "descendants": {
+                        "iGAYg": {
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "./images/generated-1771362923255.png",
+                            "mode": "fill"
+                          }
+                        },
+                        "CgweU": {
+                          "content": "#004"
+                        },
+                        "CpLDa": {
+                          "content": "Charmander"
+                        },
+                        "UaAme": {
+                          "fill": "$type-fire"
+                        },
+                        "UaAme/AgR12": {
+                          "content": "Fire"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "4sIfC",
+                  "name": "row2",
+                  "width": "fill_container",
+                  "gap": 14,
+                  "children": [
+                    {
+                      "id": "FYgZn",
+                      "type": "ref",
+                      "ref": "cSEBJ",
+                      "width": "fill_container",
+                      "name": "c3",
+                      "descendants": {
+                        "iGAYg": {
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "./images/generated-1771362933807.png",
+                            "mode": "fill"
+                          }
+                        },
+                        "CgweU": {
+                          "content": "#007"
+                        },
+                        "CpLDa": {
+                          "content": "Squirtle"
+                        },
+                        "UaAme": {
+                          "fill": "$type-water"
+                        },
+                        "UaAme/AgR12": {
+                          "content": "Water"
+                        }
+                      }
+                    },
+                    {
+                      "id": "VHJck",
+                      "type": "ref",
+                      "ref": "cSEBJ",
+                      "width": "fill_container",
+                      "name": "c4",
+                      "descendants": {
+                        "iGAYg": {
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "./images/generated-1771362939492.png",
+                            "mode": "fill"
+                          }
+                        },
+                        "CgweU": {
+                          "content": "#025"
+                        },
+                        "CpLDa": {
+                          "content": "Pikachu"
+                        },
+                        "UaAme": {
+                          "fill": "$type-electric"
+                        },
+                        "UaAme/AgR12": {
+                          "content": "Electric"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "uMOsP",
+                  "name": "row3",
+                  "width": "fill_container",
+                  "gap": 14,
+                  "children": [
+                    {
+                      "id": "wAiN9",
+                      "type": "ref",
+                      "ref": "cSEBJ",
+                      "width": "fill_container",
+                      "name": "c5",
+                      "descendants": {
+                        "iGAYg": {
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "./images/generated-1771362948716.png",
+                            "mode": "fill"
+                          }
+                        },
+                        "CgweU": {
+                          "content": "#039"
+                        },
+                        "CpLDa": {
+                          "content": "Jigglypuff"
+                        },
+                        "UaAme": {
+                          "fill": "$type-normal"
+                        },
+                        "UaAme/AgR12": {
+                          "content": "Normal"
+                        }
+                      }
+                    },
+                    {
+                      "id": "lxMV2",
+                      "type": "ref",
+                      "ref": "cSEBJ",
+                      "width": "fill_container",
+                      "name": "c6",
+                      "descendants": {
+                        "iGAYg": {
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "./images/generated-1771362954023.png",
+                            "mode": "fill"
+                          }
+                        },
+                        "CgweU": {
+                          "content": "#094"
+                        },
+                        "CpLDa": {
+                          "content": "Gengar"
+                        },
+                        "UaAme": {
+                          "fill": "$type-poison"
+                        },
+                        "UaAme/AgR12": {
+                          "content": "Ghost"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "tbT0l",
+          "type": "ref",
+          "ref": "3u54J",
+          "width": "fill_container",
+          "name": "navBar1"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "FOyLx",
+      "x": 502,
+      "y": 0,
+      "name": "Pokémon - Detail",
+      "clip": true,
+      "width": 402,
+      "height": 874,
+      "fill": "$bg-page",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "9zcxJ",
+          "name": "content",
+          "width": "fill_container",
+          "height": "fill_container",
+          "layout": "vertical",
+          "children": [
+            {
+              "type": "frame",
+              "id": "qWyte",
+              "name": "topBar",
+              "width": "fill_container",
+              "padding": [
+                48,
+                20,
+                8,
+                20
+              ],
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "DfR87",
+                  "name": "backBtn",
+                  "width": 40,
+                  "height": 40,
+                  "fill": "$bg-card",
+                  "cornerRadius": 14,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "hdhld",
+                      "name": "backIc",
+                      "width": 20,
+                      "height": 20,
+                      "iconFontName": "arrow-left",
+                      "iconFontFamily": "lucide",
+                      "fill": "$text-primary"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "2xzr6",
+                  "name": "favBtn",
+                  "width": 40,
+                  "height": 40,
+                  "fill": "$bg-card",
+                  "cornerRadius": 14,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "etLMc",
+                      "name": "favIc",
+                      "width": 20,
+                      "height": 20,
+                      "iconFontName": "heart",
+                      "iconFontFamily": "lucide",
+                      "fill": "$text-tertiary"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "KUEYc",
+              "name": "heroImage",
+              "width": "fill_container",
+              "height": 200,
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "./images/generated-1771362991973.png",
+                "mode": "fill"
+              },
+              "layout": "vertical",
+              "justifyContent": "center",
+              "alignItems": "center"
+            },
+            {
+              "type": "frame",
+              "id": "hL3O9",
+              "name": "infoSection",
+              "width": "fill_container",
+              "height": "fill_container",
+              "fill": "$bg-page",
+              "cornerRadius": [
+                28,
+                28,
+                0,
+                0
+              ],
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#00000008",
+                "offset": {
+                  "x": 0,
+                  "y": -4
+                },
+                "blur": 20
+              },
+              "layout": "vertical",
+              "gap": 20,
+              "padding": [
+                20,
+                24,
+                0,
+                24
+              ],
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "wixLW",
+                  "name": "nameRow",
+                  "width": "fill_container",
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "Z5kNr",
+                      "name": "nameCol",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "ZWYMp",
+                          "name": "pokeName",
+                          "fill": "$text-primary",
+                          "content": "Charmander",
+                          "fontFamily": "Plus Jakarta Sans",
+                          "fontSize": 28,
+                          "fontWeight": "800"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "Ed6kp",
+                          "name": "typeRow",
+                          "gap": 8,
+                          "children": [
+                            {
+                              "id": "55L5Y",
+                              "type": "ref",
+                              "ref": "D4wGn",
+                              "name": "typeF",
+                              "fill": "$type-fire",
+                              "descendants": {
+                                "AgR12": {
+                                  "content": "Fire"
+                                }
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "Xx0gZ",
+                      "name": "numText",
+                      "fill": "$text-muted",
+                      "content": "#004",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 20,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "GUf4h",
+                  "name": "about",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 10,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "e4wA5",
+                      "name": "aboutTitle",
+                      "fill": "$text-primary",
+                      "content": "About",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 16,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "KRuLM",
+                      "name": "aboutDesc",
+                      "fill": "$text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "The flame on its tail indicates Charmander's life force. If it is healthy, the flame burns brightly.",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Inter",
+                      "fontSize": 14
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "rKQgP",
+                  "name": "physicals",
+                  "width": "fill_container",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "67QlE",
+                      "name": "weightCard",
+                      "width": "fill_container",
+                      "fill": "$bg-card",
+                      "cornerRadius": 16,
+                      "layout": "vertical",
+                      "gap": 4,
+                      "padding": 16,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "qp385",
+                          "name": "weightVal",
+                          "fill": "$text-primary",
+                          "content": "8.5 kg",
+                          "fontFamily": "Plus Jakarta Sans",
+                          "fontSize": 18,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "qGOpX",
+                          "name": "weightLbl",
+                          "fill": "$text-tertiary",
+                          "content": "Weight",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "8PdxK",
+                      "name": "heightCard",
+                      "width": "fill_container",
+                      "fill": "$bg-card",
+                      "cornerRadius": 16,
+                      "layout": "vertical",
+                      "gap": 4,
+                      "padding": 16,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "1rJ7i",
+                          "name": "heightVal",
+                          "fill": "$text-primary",
+                          "content": "0.6 m",
+                          "fontFamily": "Plus Jakarta Sans",
+                          "fontSize": 18,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "ORoGe",
+                          "name": "heightLbl",
+                          "fill": "$text-tertiary",
+                          "content": "Height",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "W4GcB",
+                      "name": "catCard",
+                      "width": "fill_container",
+                      "fill": "$bg-card",
+                      "cornerRadius": 16,
+                      "layout": "vertical",
+                      "gap": 4,
+                      "padding": 16,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "zVWAk",
+                          "name": "catVal",
+                          "fill": "$text-primary",
+                          "content": "Lizard",
+                          "fontFamily": "Plus Jakarta Sans",
+                          "fontSize": 18,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "Oj4XJ",
+                          "name": "catLbl",
+                          "fill": "$text-tertiary",
+                          "content": "Category",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Clb8w",
+                  "name": "stats",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "eYVZ3",
+                      "name": "statsTitle",
+                      "fill": "$text-primary",
+                      "content": "Base Stats",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 16,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "id": "9guKx",
+                      "type": "ref",
+                      "ref": "iXvYy",
+                      "width": "fill_container",
+                      "name": "stat1",
+                      "descendants": {
+                        "fLvQg": {
+                          "content": "HP"
+                        },
+                        "P5Q5q": {
+                          "width": 120
+                        },
+                        "WfGVa": {
+                          "content": "39"
+                        }
+                      }
+                    },
+                    {
+                      "id": "gNo9R",
+                      "type": "ref",
+                      "ref": "iXvYy",
+                      "width": "fill_container",
+                      "name": "stat2",
+                      "descendants": {
+                        "fLvQg": {
+                          "content": "ATK"
+                        },
+                        "P5Q5q": {
+                          "width": 150,
+                          "fill": "$type-fire"
+                        },
+                        "WfGVa": {
+                          "content": "52"
+                        }
+                      }
+                    },
+                    {
+                      "id": "065QT",
+                      "type": "ref",
+                      "ref": "iXvYy",
+                      "width": "fill_container",
+                      "name": "stat3",
+                      "descendants": {
+                        "fLvQg": {
+                          "content": "DEF"
+                        },
+                        "P5Q5q": {
+                          "width": 110
+                        },
+                        "WfGVa": {
+                          "content": "43"
+                        }
+                      }
+                    },
+                    {
+                      "id": "stPsv",
+                      "type": "ref",
+                      "ref": "iXvYy",
+                      "width": "fill_container",
+                      "name": "stat4",
+                      "descendants": {
+                        "fLvQg": {
+                          "content": "SPD"
+                        },
+                        "P5Q5q": {
+                          "width": 170,
+                          "fill": "$accent-blue"
+                        },
+                        "WfGVa": {
+                          "content": "65"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "oeIvJ",
+                  "name": "catchBtnWrap",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "padding": [
+                    8,
+                    0,
+                    24,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "migri",
+                      "name": "catchButton",
+                      "width": "fill_container",
+                      "height": 52,
+                      "fill": "$accent-red",
+                      "cornerRadius": 20,
+                      "gap": 8,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "QovVA",
+                          "name": "catchIc",
+                          "width": 20,
+                          "height": 20,
+                          "iconFontName": "crosshair",
+                          "iconFontFamily": "lucide",
+                          "fill": "#FFFFFF"
+                        },
+                        {
+                          "type": "text",
+                          "id": "32Yhk",
+                          "name": "catchTxt",
+                          "fill": "#FFFFFF",
+                          "content": "Catch Pokémon!",
+                          "fontFamily": "Plus Jakarta Sans",
+                          "fontSize": 16,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "PoZxB",
+      "x": 1004,
+      "y": 0,
+      "name": "My Collection",
+      "clip": true,
+      "width": 402,
+      "height": 874,
+      "fill": "$bg-page",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "JjYKi",
+          "name": "content",
+          "width": "fill_container",
+          "height": "fill_container",
+          "layout": "vertical",
+          "gap": 20,
+          "padding": [
+            0,
+            20
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "SzQOT",
+              "name": "header",
+              "width": "fill_container",
+              "padding": [
+                56,
+                0,
+                0,
+                0
+              ],
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "xXMWK",
+                  "name": "title3",
+                  "fill": "$text-primary",
+                  "content": "My Collection",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 28,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "frame",
+                  "id": "iZ8Us",
+                  "name": "sortBtn",
+                  "width": 40,
+                  "height": 40,
+                  "fill": "$bg-card",
+                  "cornerRadius": 14,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "OzRnQ",
+                      "name": "sortIc",
+                      "width": 20,
+                      "height": 20,
+                      "iconFontName": "arrow-up-down",
+                      "iconFontFamily": "lucide",
+                      "fill": "$text-secondary"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "ssIcL",
+              "name": "progressCard",
+              "width": "fill_container",
+              "fill": "$accent-red",
+              "cornerRadius": 20,
+              "layout": "vertical",
+              "gap": 14,
+              "padding": 20,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "U4Z3b",
+                  "name": "progressTop",
+                  "width": "fill_container",
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "PNXRt",
+                      "name": "progressLabel",
+                      "fill": "#FFFFFF",
+                      "content": "Pokémon Caught",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "xvz8G",
+                      "name": "progressCount",
+                      "fill": "#FFFFFF",
+                      "content": "3 / 151",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 20,
+                      "fontWeight": "800"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "dJZkk",
+                  "name": "progressTrack",
+                  "width": "fill_container",
+                  "height": 8,
+                  "fill": "#FFFFFF40",
+                  "cornerRadius": 100,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "tyQld",
+                      "name": "progressFill",
+                      "width": 22,
+                      "height": "fill_container",
+                      "fill": "#FFFFFF",
+                      "cornerRadius": 100
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "GIjiJ",
+              "name": "recentHeader",
+              "width": "fill_container",
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "ctAkY",
+                  "name": "recentTitle",
+                  "fill": "$text-primary",
+                  "content": "Recently Caught",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 18,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "frame",
+                  "id": "BQMi2",
+                  "name": "recentBadge",
+                  "fill": "$accent-red-soft",
+                  "cornerRadius": 100,
+                  "padding": [
+                    4,
+                    10
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "dAnqE",
+                      "name": "recentBadgeTxt",
+                      "fill": "$accent-red",
+                      "content": "3 total",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "600"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "54J6h",
+              "name": "caughtGrid",
+              "width": "fill_container",
+              "height": "fill_container",
+              "layout": "vertical",
+              "gap": 14,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "UJfpz",
+                  "name": "row1",
+                  "width": "fill_container",
+                  "gap": 14,
+                  "children": [
+                    {
+                      "id": "9llNU",
+                      "type": "ref",
+                      "ref": "cSEBJ",
+                      "width": "fill_container",
+                      "name": "cc1",
+                      "descendants": {
+                        "iGAYg": {
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "./images/generated-1771363098115.png",
+                            "mode": "fill"
+                          }
+                        },
+                        "CgweU": {
+                          "content": "#025"
+                        },
+                        "CpLDa": {
+                          "content": "Pikachu"
+                        },
+                        "UaAme": {
+                          "fill": "$type-electric"
+                        },
+                        "UaAme/AgR12": {
+                          "content": "Electric"
+                        }
+                      }
+                    },
+                    {
+                      "id": "UIHe8",
+                      "type": "ref",
+                      "ref": "cSEBJ",
+                      "width": "fill_container",
+                      "name": "cc2",
+                      "descendants": {
+                        "iGAYg": {
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "./images/generated-1771363103911.png",
+                            "mode": "fill"
+                          }
+                        },
+                        "CgweU": {
+                          "content": "#001"
+                        },
+                        "CpLDa": {
+                          "content": "Bulbasaur"
+                        },
+                        "UaAme": {
+                          "fill": "$type-grass"
+                        },
+                        "UaAme/AgR12": {
+                          "content": "Grass"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "AJcKa",
+                  "name": "row2",
+                  "width": "fill_container",
+                  "gap": 14,
+                  "children": [
+                    {
+                      "id": "dZodQ",
+                      "type": "ref",
+                      "ref": "cSEBJ",
+                      "width": "fill_container",
+                      "name": "cc3",
+                      "descendants": {
+                        "iGAYg": {
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "./images/generated-1771363112516.png",
+                            "mode": "fill"
+                          }
+                        },
+                        "CgweU": {
+                          "content": "#007"
+                        },
+                        "CpLDa": {
+                          "content": "Squirtle"
+                        },
+                        "UaAme": {
+                          "fill": "$type-water"
+                        },
+                        "UaAme/AgR12": {
+                          "content": "Water"
+                        }
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Pd9Ne",
+                      "name": "emptySlot",
+                      "width": "fill_container",
+                      "height": 185,
+                      "fill": "$bg-card",
+                      "cornerRadius": 20,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 2,
+                        "fill": "$bg-elevated"
+                      },
+                      "layout": "vertical",
+                      "gap": 8,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "639mv",
+                          "name": "emptyIcon",
+                          "width": 32,
+                          "height": 32,
+                          "iconFontName": "circle-dashed",
+                          "iconFontFamily": "lucide",
+                          "fill": "$text-muted"
+                        },
+                        {
+                          "type": "text",
+                          "id": "SjCDO",
+                          "name": "emptyText",
+                          "fill": "$text-tertiary",
+                          "content": "Catch more!",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "m9E1m",
+          "type": "ref",
+          "ref": "3u54J",
+          "width": "fill_container",
+          "name": "navBar3",
+          "descendants": {
+            "6NBwe": {
+              "fill": "$text-tertiary"
+            },
+            "N3QKb": {
+              "fill": "$text-tertiary",
+              "fontWeight": "500"
+            },
+            "A9QWt": {
+              "fill": "$accent-red"
+            },
+            "cTiS0": {
+              "fill": "$accent-red",
+              "fontWeight": "600"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "variables": {
+    "accent-blue": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#3B82F6"
+        },
+        {
+          "value": "#3B82F6"
+        }
+      ]
+    },
+    "accent-green": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#22C55E"
+        },
+        {
+          "value": "#22C55E"
+        }
+      ]
+    },
+    "accent-pink": {
+      "type": "color",
+      "value": "#EC4899"
+    },
+    "accent-purple": {
+      "type": "color",
+      "value": "#8B5CF6"
+    },
+    "accent-red": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#EF4444"
+        },
+        {
+          "value": "#EF4444"
+        }
+      ]
+    },
+    "accent-red-soft": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#EF444420"
+        },
+        {
+          "value": "#EF444418"
+        }
+      ]
+    },
+    "accent-yellow": {
+      "type": "color",
+      "value": "#EAB308"
+    },
+    "bg-card": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#F4F4F5"
+        },
+        {
+          "value": "#F4F4F5"
+        }
+      ]
+    },
+    "bg-elevated": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#E4E4E7"
+        },
+        {
+          "value": "#E4E4E7"
+        }
+      ]
+    },
+    "bg-page": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#FFFFFF"
+        },
+        {
+          "value": "#FFFFFF"
+        }
+      ]
+    },
+    "text-muted": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#D4D4D8"
+        },
+        {
+          "value": "#D4D4D8"
+        }
+      ]
+    },
+    "text-primary": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#18181B"
+        },
+        {
+          "value": "#18181B"
+        }
+      ]
+    },
+    "text-secondary": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#71717A"
+        },
+        {
+          "value": "#71717A"
+        }
+      ]
+    },
+    "text-tertiary": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#A1A1AA"
+        },
+        {
+          "value": "#A1A1AA"
+        }
+      ]
+    },
+    "type-bug": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#84CC16"
+        },
+        {
+          "value": "#84CC16"
+        }
+      ]
+    },
+    "type-electric": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#EAB308"
+        },
+        {
+          "value": "#EAB308"
+        }
+      ]
+    },
+    "type-fire": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#F97316"
+        },
+        {
+          "value": "#F97316"
+        }
+      ]
+    },
+    "type-flying": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#818CF8"
+        },
+        {
+          "value": "#818CF8"
+        }
+      ]
+    },
+    "type-grass": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#22C55E"
+        },
+        {
+          "value": "#22C55E"
+        }
+      ]
+    },
+    "type-ground": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#D97706"
+        },
+        {
+          "value": "#D97706"
+        }
+      ]
+    },
+    "type-normal": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#A1A1AA"
+        },
+        {
+          "value": "#A1A1AA"
+        }
+      ]
+    },
+    "type-poison": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#8B5CF6"
+        },
+        {
+          "value": "#8B5CF6"
+        }
+      ]
+    },
+    "type-psychic": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#EC4899"
+        },
+        {
+          "value": "#EC4899"
+        }
+      ]
+    },
+    "type-water": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#3B82F6"
+        },
+        {
+          "value": "#3B82F6"
+        }
+      ]
+    }
+  }
+}
