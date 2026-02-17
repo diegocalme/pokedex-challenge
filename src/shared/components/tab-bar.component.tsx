@@ -15,7 +15,6 @@ interface Tab {
 const TABS: Tab[] = [
   { href: "/", label: "Pokédex", icon: BookOpen },
   { href: "/collection", label: "Collection", icon: Backpack },
-  { href: "/trainer", label: "Trainer", icon: User },
 ];
 
 const TabBar = memo(function TabBar() {

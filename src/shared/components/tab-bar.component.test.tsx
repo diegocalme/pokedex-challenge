@@ -26,7 +26,6 @@ describe("TabBar", () => {
     render(<TabBar />);
     expect(screen.getByText("Pokédex")).toBeInTheDocument();
     expect(screen.getByText("Collection")).toBeInTheDocument();
-    expect(screen.getByText("Trainer")).toBeInTheDocument();
   });
 
   it("should highlight the active tab", () => {

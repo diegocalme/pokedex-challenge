@@ -18,6 +18,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Pokédex",
   description: "Browse and catch Pokémon",
+  colorScheme: "light",
 };
 
 export default function RootLayout({

@@ -2,7 +2,6 @@
 
 import { useCallback, useEffect, useRef } from "react";
 import { useRouter } from "next/navigation";
-import { SlidersHorizontal } from "lucide-react";
 import { PokemonListStatus } from "@pokemon/enums/pokemon-list-status.enum";
 import { usePokemonList } from "@pokemon/hooks/use-pokemon-list.hook";
 import { PokemonSearchBar } from "@pokemon/components/pokemon-search-bar/pokemon-search-bar.component";
@@ -60,18 +59,9 @@ function PokemonListPage() {
 
   return (
     <div className="mx-auto flex w-full max-w-7xl flex-col gap-4 px-4 py-6">
-      <div className="flex items-center justify-between">
-        <h1 className="font-heading text-2xl font-bold text-zinc-900">
-          Pokédex
-        </h1>
-        <button
-          type="button"
-          className="flex h-10 w-10 items-center justify-center rounded-xl bg-zinc-100 text-zinc-500 transition-colors hover:bg-zinc-200"
-          aria-label="Filters"
-        >
-          <SlidersHorizontal className="h-5 w-5" />
-        </button>
-      </div>
+      <h1 className="font-heading text-2xl font-bold text-zinc-900">
+        Pokédex
+      </h1>
 
       <PokemonSearchBar value={searchQuery} onChange={setSearchQuery} />
 
