@@ -11,7 +11,6 @@ import { PokemonDetailStatusIndicator } from "@pokemon/components/pokemon-detail
 import { PokemonDetailImage } from "@pokemon/components/pokemon-detail-image/pokemon-detail-image.component";
 import { PokemonDetailTypes } from "@pokemon/components/pokemon-detail-types/pokemon-detail-types.component";
 import { PokemonDetailCatchSlot } from "@pokemon/components/pokemon-detail-catch-slot/pokemon-detail-catch-slot.component";
-import { PokemonDetailFavoriteSlot } from "@pokemon/components/pokemon-detail-favorite-slot/pokemon-detail-favorite-slot.component";
 
 function PokemonDetailPage({ idOrName }: PokemonDetailPageProps) {
   const router = useRouter();
@@ -48,7 +47,6 @@ function PokemonDetailPage({ idOrName }: PokemonDetailPageProps) {
           name={detail.name}
           id={detail.id}
           onBack={handleBack}
-          favoriteSlot={<PokemonDetailFavoriteSlot />}
         />
       )}
 

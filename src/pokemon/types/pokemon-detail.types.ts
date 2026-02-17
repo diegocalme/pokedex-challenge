@@ -39,7 +39,6 @@ interface PokemonDetailHeaderProps {
   name: string;
   id: number;
   onBack: () => void;
-  favoriteSlot?: React.ReactNode;
 }
 
 interface PokemonDetailImageProps {

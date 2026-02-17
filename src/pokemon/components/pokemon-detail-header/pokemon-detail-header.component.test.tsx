@@ -26,16 +26,4 @@ describe("PokemonDetailHeader", () => {
     expect(onBack).toHaveBeenCalledOnce();
   });
 
-  it("should render the favorite slot when provided", () => {
-    render(
-      <PokemonDetailHeader
-        name="pikachu"
-        id={25}
-        onBack={onBack}
-        favoriteSlot={<button type="button">Favorite</button>}
-      />
-    );
-
-    expect(screen.getByRole("button", { name: "Favorite" })).toBeInTheDocument();
-  });
 });

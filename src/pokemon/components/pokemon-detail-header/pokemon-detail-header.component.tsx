@@ -5,7 +5,6 @@ import type { PokemonDetailHeaderProps } from "@pokemon/types/pokemon-detail.typ
 const PokemonDetailHeader = memo(function PokemonDetailHeader({
   name,
   onBack,
-  favoriteSlot,
 }: PokemonDetailHeaderProps) {
   return (
     <div className="flex items-center justify-between px-5 pb-2 pt-12">
@@ -17,7 +16,6 @@ const PokemonDetailHeader = memo(function PokemonDetailHeader({
       >
         <ArrowLeft className="h-5 w-5" />
       </button>
-      {favoriteSlot}
     </div>
   );
 });
